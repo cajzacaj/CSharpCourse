@@ -1,0 +1,18 @@
+Move around
+Seats = klass som har en char[,] (== karta)
+seats.FillFromText = Metod i klassen Seats som fungerar som en construktor
+	tar in en string och gör direkt om den till en string[] (params)
+	ska ta string[] och göra till char[,]
+
+
+	"OO ",
+    "OOO",
+    "OOO",
+    " OO",
+    "OOO",
+    " OO"
+
+programmet ska använda char[,] (seats) för att skriva ut namn i en tabell (nested loop)
+
+ExtraExtra: 
+Tillåt ett stökig .txt-fil (massa blanksteg/extra tecken) ska ändå visa ett fyrkantigt rum.

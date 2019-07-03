@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\Users\Cajza Nydén\source\repos\shipping\shipping.csproj" />
+    <ProjectReference Include="..\Shipping\shipping.csproj" />
   </ItemGroup>
 
 </Project>

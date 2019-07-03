@@ -19,21 +19,13 @@ namespace InheritenceShapes
             double totalArea = 0;
 
             Console.WriteLine();
-            ch.WriteLineGreen($"Type                 Area");
+            ch.Columns(ConsoleColor.DarkCyan, "Type", "Area");
             foreach (var shape in shapeList)
             {
-                string typeOfShape = "";
-                if (shape is Circle)
-                    typeOfShape = "Circle";
-                else if (shape is Triangle)
-                    typeOfShape = "Triangle";
-                else if (shape is Rectangle)
-                    typeOfShape = "Rectangle";
-
-                ch.WriteLineDark($"{typeOfShape,-20} {shape.GetArea():.##}");
+                ch.Columns(ConsoleColor.DarkGray, shape.ToString(), Math.Round(shape.GetArea()));
                 totalArea += shape.GetArea();
             }
-            ch.WriteLineDark($"Total area           {totalArea:.##}");
+            ch.Columns(ConsoleColor.DarkGray, "Total area:", Math.Round(totalArea, 2));
         }
 
         private static List<Shape> AskForListOfShapes()
@@ -92,6 +84,7 @@ namespace InheritenceShapes
         {
             foreach (var shape in shapeList)
             {
+
                 if (shape is Circle)
                 {
                     Circle circle = shape as Circle;

@@ -12,5 +12,9 @@ namespace InheritenceShapes
 
             return area;
         }
+        public override string ToString()
+        {
+            return "Triangle";
+        }
     }
 }

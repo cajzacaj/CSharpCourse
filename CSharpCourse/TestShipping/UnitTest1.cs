@@ -24,7 +24,7 @@ namespace TestShipping
         [DataRow(251)]
         [DataRow(400)]
         [DataRow(500)]
-        public void shipping_should_cost_54kr_for_251_to_500grams_regular_letters_not_bulky1_2019(int weight)
+        public void shipping_should_cost_54kr_for_251_to_500grams_regular_letters_not_bulky_2019(int weight)
         {
             var service = new ShippingService();
             var letter = new Letter(weight, false, false);
@@ -33,17 +33,18 @@ namespace TestShipping
             Assert.AreEqual(54, fee);
         }
         [TestMethod]
-        [DataRow(251)]
-        [DataRow(400)]
-        [DataRow(500)]
-        public void shipping_should_cost_54kr_for_251_to_500grams_regular_letters_not_bulky1_2018(int weight)
+        [DataRow(0)]
+        [DataRow(25)]
+        [DataRow(50)]
+        public void shipping_should_cost_96kr_for_0_to_50grams_recommended_letters_bulky_2018(int weight)
         {
             var service = new ShippingService();
-            var letter = new Letter(weight, false, false);
-            decimal fee = service.CalculateShipping(letter, "2019");
+            var letter = new Letter(weight, true, true);
+            decimal fee = service.CalculateShipping(letter, "2018");
 
-            Assert.AreEqual(54, fee);
+            Assert.AreEqual(96, fee);
         }
+
 
         [TestMethod]
         [DataRow(-1)]

@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dag2", "Fundamentals\Dag2\C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dag3", "Fundamentals\Dag3\CSharp3\Dag3.csproj", "{47549A87-9151-4E51-9F81-741051EAE4B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "..\Utilities\Utilities.csproj", "{259485A5-6010-4AA4-B6E5-B060AB37AC6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "..\Utilities\Utilities.csproj", "{259485A5-6010-4AA4-B6E5-B060AB37AC6C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fundamentals", "Fundamentals", "{31D2B159-2CBE-4268-8317-71103B3C747A}"
 EndProject
@@ -26,6 +26,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InheritenceShapes", "InheritenceShapes\InheritenceShapes.csproj", "{229AB94E-BF14-49F5-A176-783ED6D6DF93}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoveAround", "MoveAround\MoveAround.csproj", "{BCAEF764-1D06-4B4F-97C7-9D2A677A0A67}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationApp", "..\..\..\..\..\Users\Cajza Nydén\Documents\ValidationApp\ValidationApp.csproj", "{BCB6E5B3-14B0-427C-B3F9-8D8B03C7F156}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestProject1", "..\..\..\..\..\Users\Cajza Nydén\Documents\ValidationApp\UnitTestProject1.csproj", "{FD7518A0-23EA-4A08-8653-EB6FDE165459}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ValidationApp", "ValidationApp", "{E05CC6E9-710C-4000-80EA-5A1E08FC28DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +83,14 @@ Global
 		{BCAEF764-1D06-4B4F-97C7-9D2A677A0A67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCAEF764-1D06-4B4F-97C7-9D2A677A0A67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCAEF764-1D06-4B4F-97C7-9D2A677A0A67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCB6E5B3-14B0-427C-B3F9-8D8B03C7F156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCB6E5B3-14B0-427C-B3F9-8D8B03C7F156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCB6E5B3-14B0-427C-B3F9-8D8B03C7F156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCB6E5B3-14B0-427C-B3F9-8D8B03C7F156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD7518A0-23EA-4A08-8653-EB6FDE165459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD7518A0-23EA-4A08-8653-EB6FDE165459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD7518A0-23EA-4A08-8653-EB6FDE165459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD7518A0-23EA-4A08-8653-EB6FDE165459}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +99,8 @@ Global
 		{588DE699-C859-4AB9-B39C-4358F5EAE190} = {31D2B159-2CBE-4268-8317-71103B3C747A}
 		{130D0CF7-DA1D-4900-851F-31CA26C1579C} = {31D2B159-2CBE-4268-8317-71103B3C747A}
 		{47549A87-9151-4E51-9F81-741051EAE4B9} = {31D2B159-2CBE-4268-8317-71103B3C747A}
+		{BCB6E5B3-14B0-427C-B3F9-8D8B03C7F156} = {E05CC6E9-710C-4000-80EA-5A1E08FC28DA}
+		{FD7518A0-23EA-4A08-8653-EB6FDE165459} = {E05CC6E9-710C-4000-80EA-5A1E08FC28DA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1A56537-B34F-4313-93D2-5762BB743343}

@@ -42,24 +42,24 @@ namespace InheritenceShapes
 
             while (true)
             {
-                char command = ch.AskForChar("Select (T)riangle, (R)ektangle, (C)ircle or (D)one:");
+                char command = ch.AskForKey("Select (T)riangle, (R)ektangle, (C)ircle or (D)one:");
+                ch.Space();
 
-                if (command == 'D')
-                    break;
-                else if (command == 'T')
+                switch (command)
                 {
-                    listOfShapes.Add(AskForTriangle());
-                }
-                else if (command == 'R')
-                {
-                    listOfShapes.Add(AskForRectangle());
-                }
-                else if (command == 'C')
-                {
-                    listOfShapes.Add(AskForCirle());
+                    case 'T':
+                        listOfShapes.Add(AskForTriangle());
+                        break;
+                    case 'R':
+                        listOfShapes.Add(AskForRectangle());
+                        break;
+                    case 'C':
+                        listOfShapes.Add(AskForCirle());
+                        break;
+                    case 'D':
+                        return listOfShapes;
                 }
             }
-            return listOfShapes;
         }
 
         private static Circle AskForCirle()

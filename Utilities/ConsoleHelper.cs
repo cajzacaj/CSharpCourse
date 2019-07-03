@@ -9,7 +9,7 @@ namespace CSharpCourse.Utilities
     {
         public int ColumnSize { get; set; } = 20;
 
-        public void Init(int width=60, int height=20)
+        public void Init(int width = 60, int height = 20)
         {
             SetStandardColor();
 
@@ -97,12 +97,12 @@ namespace CSharpCourse.Utilities
 
         public int AskForInteger(string question)
         {
-            while(true)
+            while (true)
             {
                 string x = AskForString(question);
                 if (int.TryParse(x, out int answer))
                     return answer;
-            } 
+            }
         }
         public double AskForDouble(string question)
         {
@@ -123,20 +123,20 @@ namespace CSharpCourse.Utilities
             }
         }
 
-        public string AskForString(string question, string defaultAnswer=null)
+        public string AskForString(string question, string defaultAnswer = null)
         {
             Write($"{question} ");
             string answer = ReadLineGreen();
 
-            if (defaultAnswer!=null && string.IsNullOrWhiteSpace(answer))
+            if (defaultAnswer != null && string.IsNullOrWhiteSpace(answer))
                 return defaultAnswer;
 
             return answer;
         }
 
-        public string AskForStringRegex(string question, string regex, bool addStartAndEndSign=true)
+        public string AskForStringRegex(string question, string regex, bool addStartAndEndSign = true)
         {
-            while(true)
+            while (true)
             {
                 Write($"{question} ");
                 string answer = ReadLineGreen();

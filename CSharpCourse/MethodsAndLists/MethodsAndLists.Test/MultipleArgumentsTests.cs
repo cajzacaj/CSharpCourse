@@ -87,7 +87,6 @@ namespace MethodsAndLists.Test
             var expected = new List<double> { 1200, 314, 5000, 9900 };
             CollectionAssert.AreEqual(expected, x.MultiplyAllBy(100, new List<double> { 12, 3.14, 50, 99 }));
 
-
             Assert.ThrowsException<ArgumentException>(() =>
                 x.MultiplyAllBy(3, null)
             );
@@ -114,7 +113,7 @@ namespace MethodsAndLists.Test
                 x.SomeToUpper(null, new List<bool> { true })
             );
             Assert.ThrowsException<ArgumentException>(() =>
-                x.SomeToUpper(new List<string> { "aaa"}, null)
+                x.SomeToUpper(new List<string> { "aaa" }, null)
             );
             Assert.ThrowsException<ArgumentException>(() =>
                 x.SomeToUpper(new List<string> { "aaa" }, new List<bool> { true, true })

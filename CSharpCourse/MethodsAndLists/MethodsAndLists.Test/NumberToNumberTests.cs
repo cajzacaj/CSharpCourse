@@ -37,6 +37,7 @@ namespace MethodsAndLists.Test
             Assert.AreEqual(expected, x.SumNumbers(from, to));
         }
 
+        [TestMethod]
         [DataRow(5, 4)]
         [DataRow(-3, -4)]
         public void SumNumbers_InvalidInput(int from, int to)
@@ -59,15 +60,14 @@ namespace MethodsAndLists.Test
         {
             Assert.AreEqual(expected, x.SumNumbersDividedByThreeOrFive(input));
 
-            Assert.ThrowsException<ArgumentException>(() => x.SumNumbersTo(0));
-            Assert.ThrowsException<ArgumentException>(() => x.SumNumbersTo(-1));
         }
 
+        [TestMethod]
         [DataRow(0)]
         [DataRow(-1)]
         public void SumNumbersDividedByThreeOrFive_InvalidInput(int input)
         {
-            Assert.ThrowsException<ArgumentException>(() => x.SumNumbersTo(input));
+            Assert.ThrowsException<ArgumentException>(() => x.SumNumbersDividedByThreeOrFive(input));
         }
 
     }

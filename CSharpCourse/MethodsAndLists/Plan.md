@@ -1,14 +1,14 @@
 
 # Basic (alla gör alla)
 
-NumberListToNumberListTests
-NumberListToStringListTests
-NumberListToStringTests
-NumberToNumberTests
-StringListToBoolTests
-StringListToNumberTests
-StringListToStringListTests
-StringToBoolTests
+X NumberListToNumberListTests
+X NumberListToStringListTests
+X NumberListToStringTests
+X NumberToNumberTests
+X StringListToBoolTests
+X StringListToNumberTests
+X StringListToStringListTests
+X StringToBoolTests
 
 # Intermediate (försök hinna med)
 

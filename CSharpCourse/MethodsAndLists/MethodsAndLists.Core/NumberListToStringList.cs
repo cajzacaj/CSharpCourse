@@ -17,7 +17,14 @@ namespace MethodsAndLists.Core
 
         public List<string> AddStars(List<int> list)
         {
-            throw new NotImplementedException();
+            var output = new List<string>();
+
+            foreach (int i in list)
+            {
+
+            }
+
+            return output;
         }
 
         public List<string> AddStarsToNumbersHigherThan1000(List<int> list)

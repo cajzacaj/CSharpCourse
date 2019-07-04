@@ -20,9 +20,11 @@ namespace MethodsAndLists.Test
 
             var input = new List<int> { 5, 15, 23, 200 };
             var expected = new List<int> { 105, 115, 123, 300 };
-            List<int> result = x.Add100ToEachNumber(input);
+            List<int> result1 = x.Add100ToEachNumber(input);
+            List<int> result2 = x.Add100ToEachNumberLinq(input);
 
-            CollectionAssert.AreEqual(expected, result);
+            CollectionAssert.AreEqual(expected, result1);
+            CollectionAssert.AreEqual(expected, result2);
         }
 
         [TestMethod]
@@ -32,8 +34,12 @@ namespace MethodsAndLists.Test
 
             var input = new List<int> { 1005, 6, 77, 200000, 666 };
             var expected = new List<int> { 1005, 200000 };
-            List<int> result = x.GetNumbersHigherThan1000(input);
-            CollectionAssert.AreEqual(expected, result);
+            List<int> result1 = x.GetNumbersHigherThan1000(input);
+            List<int> result2 = x.GetNumbersHigherThan1000Linq(input);
+
+            CollectionAssert.AreEqual(expected, result1);
+            CollectionAssert.AreEqual(expected, result2);
+
         }
 
         [TestMethod]
@@ -43,9 +49,11 @@ namespace MethodsAndLists.Test
 
             var input = new List<int> { 20, 5, 6, 7, 10 };
             var expected = new List<int> { 20, 5, 10 };
-            List<int> result = x.GetNumbersDividableByFive(input);
+            List<int> result1 = x.GetNumbersDividableByFive(input);
+            List<int> result2 = x.GetNumbersDividableByFiveLinq(input);
 
-            CollectionAssert.AreEqual(expected, result);
+            CollectionAssert.AreEqual(expected, result1);
+            CollectionAssert.AreEqual(expected, result2);
         }
 
         [TestMethod]
@@ -55,9 +63,11 @@ namespace MethodsAndLists.Test
 
             var input = new List<int> { 300, 200, -500, 1000 };
             var expected = new List<int> { 3, 2, -5, 10 };
-            List<int> result = x.DivideEachNumberBy100(input);
+            List<int> result1 = x.DivideEachNumberBy100(input);
+            List<int> result2 = x.DivideEachNumberBy100Linq(input);
 
-            CollectionAssert.AreEqual(expected, result);
+            CollectionAssert.AreEqual(expected, result1);
+            CollectionAssert.AreEqual(expected, result2);
         }
 
         [TestMethod]
@@ -67,9 +77,11 @@ namespace MethodsAndLists.Test
 
             var input = new List<int> { 10, 20, -30, 40 };
             var expected = new List<int> { -10, -20, 30, -40 };
-            List<int> result = x.NegateEachNumber(input);
+            List<int> result1 = x.NegateEachNumber(input);
+            List<int> result2 = x.NegateEachNumberLinq(input);
 
-            CollectionAssert.AreEqual(expected, result);
+            CollectionAssert.AreEqual(expected, result1);
+            CollectionAssert.AreEqual(expected, result2);
         }
 
         [TestMethod]
@@ -79,8 +91,11 @@ namespace MethodsAndLists.Test
 
             var input = new List<int> { 6, 16, 23, 200, 300 };
             var expected = new List<int> { 56, 66, 73, 200, 300 };
-            List<int> result = x.Add50ToFirstThreeElements(input);
-            CollectionAssert.AreEqual(expected, result);
+            List<int> result1 = x.Add50ToFirstThreeElements(input);
+            List<int> result2 = x.Add50ToFirstThreeElementsLinq(input);
+
+            CollectionAssert.AreEqual(expected, result1);
+            CollectionAssert.AreEqual(expected, result2);
         }
 
         [TestMethod]
@@ -90,9 +105,11 @@ namespace MethodsAndLists.Test
 
             var input = new List<int> { 6, 16 };
             var expected = new List<int> { 56, 66 };
-            var result = x.Add50ToFirstThreeElements(input);
+            var result1 = x.Add50ToFirstThreeElements(input);
+            var result2 = x.Add50ToFirstThreeElements(input);
 
-            CollectionAssert.AreEqual(expected, result);
+            CollectionAssert.AreEqual(expected, result1);
+            CollectionAssert.AreEqual(expected, result2);
 
         }
 
@@ -103,9 +120,12 @@ namespace MethodsAndLists.Test
 
             var input = new List<int> { 1000, 2000, 3000, 4000, 5000 };
             var expected = new List<int> { 1000, 2070, 3000, 4070, 5000 };
-            List<int> result = x.Add70ToEverySecondElement(input);
+            List<int> result1 = x.Add70ToEverySecondElement(input);
+            List<int> result2 = x.Add70ToEverySecondElementLinq(input);
 
-            CollectionAssert.AreEqual(expected, result);
+            CollectionAssert.AreEqual(expected, result1);
+            CollectionAssert.AreEqual(expected, result2);
+
         }
 
         [TestMethod]
@@ -115,8 +135,11 @@ namespace MethodsAndLists.Test
 
             var input = new List<int> { 300, 200, -500, 1000 };
             var expected = new List<int> { -3, -2, 5, -10 };
-            var result = x.DivideEachNumberBy100(x.NegateEachNumber(input));
-            CollectionAssert.AreEqual(expected, result);
+            var result1 = x.DivideEachNumberBy100(x.NegateEachNumber(input));
+            var result2 = x.DivideEachNumberBy100Linq(x.NegateEachNumberLinq(input));
+
+            CollectionAssert.AreEqual(expected, result1);
+            CollectionAssert.AreEqual(expected, result2);
         }
 
     }

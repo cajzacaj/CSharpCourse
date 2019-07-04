@@ -32,5 +32,20 @@ namespace MethodsAndLists.Core
                 return $"Det finns {negativeNums.Count} st negativa tal i listan";
 
         }
+        public string ReportNumberOfNegativeValuesLinq(List<int> list)
+        {
+            list.Any(x => x < 0);
+
+            var negativeNums = new List<int>();
+
+
+            if (!list.Any(x => x < 0))
+                return "Jippi! Det finns inga negativa tal i listan";
+            else if (negativeNums.Count == 1)
+                return "Det finns ett negativt tal i listan";
+            else
+                return $"Det finns {negativeNums.Count} st negativa tal i listan";
+
+        }
     }
 }

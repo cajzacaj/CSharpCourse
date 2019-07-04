@@ -13,7 +13,7 @@ X StringToBoolTests
 # Intermediate (försök hinna med)
 
 MultipleArgumentsTests
-StringToObjectListTests
+X StringToObjectListTests
 
 # Extrauppgifter (för de som har tid över)
 

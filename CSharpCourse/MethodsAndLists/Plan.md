@@ -18,6 +18,6 @@ X StringToObjectListTests
 # Extrauppgifter (för de som har tid över)
 
 X NumberToStringTests
-StringListToStringTests
+X StringListToStringTests
 AddNumberEngineTests
 GuessingGameTests

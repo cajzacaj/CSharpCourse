@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace MethodsAndLists.Core
 {
@@ -119,70 +120,39 @@ namespace MethodsAndLists.Core
         public int[] RotateList(int[] list, int rotation)
         {
             if (list == null)
-                throw new ArgumentException("Can't be null");
-
-            int[] rotatedList = new int[list.Length];
-
-            for (int i = 0; i < list.Length; i++)
+                throw new ArgumentException();
+            if (rotation < 0)
             {
-                int newIndex = i + rotation - 1;
-
-                if (newIndex > list.Length - 1)
-                    newIndex -= list.Length;
-                else if (newIndex < 0)
-                    newIndex += list.Length;
-
-                rotatedList[i] = list[newIndex];
+                rotation *= -1;
+                int[] output = list.Skip(rotation).Concat(list.Take(rotation)).ToArray();
+                return output;
+            }
+            else
+            {
+                rotation = list.Count() - rotation;
+                int[] output = list.Skip(rotation).Concat(list.Take(rotation)).ToArray();
+                return output;
             }
 
-            return rotatedList;
+            //if (list == null)
+            //    throw new ArgumentException("Can't be null");
+
+            //int[] rotatedList = new int[list.Length];
+
+            //for (int i = 0; i < list.Length; i++)
+            //{
+            //    int newIndex = i + rotation;
+
+            //    if (newIndex > list.Length)
+            //        newIndex -= list.Length;
+            //    else if (newIndex < 0)
+            //        newIndex += list.Length;
+
+            //    rotatedList[i] = list[newIndex];
+            //}
+
+            //return rotatedList;
         }
-
-        //CollectionAssert.AreEqual(
-        //        new[] { 3, 4, 5, 1, 2 },
-        //        x.RotateList(new[] { 1, 2, 3, 4, 5 }, -2));
-
-        //    CollectionAssert.AreEqual(
-        //        new[] { 2, 3, 4, 5, 1 },
-        //        x.RotateList(new[] { 1, 2, 3, 4, 5 }, -1));
-
-        //    CollectionAssert.AreEqual(
-        //        new[] { 3, 4, 5, 1, 2 },
-        //        x.RotateList(new[] { 1, 2, 3, 4, 5 }, -2));
-
-        //    CollectionAssert.AreEqual(
-        //        new[] { 3, 4, 1, 2 },
-        //        x.RotateList(new[] { 1, 2, 3, 4 }, -2));
-
-        //    CollectionAssert.AreEqual(
-        //        new[] { 3, 1, 2 },
-        //        x.RotateList(new[] { 1, 2, 3 }, -2));
-
-        //    CollectionAssert.AreEqual(
-        //        new[] { 1, 2, 3 },
-        //        x.RotateList(new[] { 1, 2, 3 }, -3));
-
-        //    CollectionAssert.AreEqual(
-        //        new[] { 1, 2, 3 },
-        //        x.RotateList(new[] { 1, 2, 3 }, -30));
-
-        //    CollectionAssert.AreEqual(
-        //        new[] { 4, 5, 1, 2, 3 },
-        //        x.RotateList(new[] { 1, 2, 3, 4, 5 }, 2));
-
-        //    CollectionAssert.AreEqual(
-        //        new[] { 1, 2, 3, 4, 5 },
-        //        x.RotateList(new[] { 1, 2, 3, 4, 5 }, 0));
-
-        //    CollectionAssert.AreEqual(
-        //        new[] { 5, 1, 2, 3, 4 },
-        //        x.RotateList(new[] { 1, 2, 3, 4, 5 }, 1));
-
-        //    CollectionAssert.AreEqual(
-        //        new int[] { },
-        //        x.RotateList(new int[] { }, 22));
-
-        //    Assert.ThrowsException<ArgumentException>(() => x.RotateList(null, 0));
 
         public int ComputeSequence(int v, object sum)
         {

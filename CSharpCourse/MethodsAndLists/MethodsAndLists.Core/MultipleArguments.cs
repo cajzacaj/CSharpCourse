@@ -154,9 +154,31 @@ namespace MethodsAndLists.Core
             //return rotatedList;
         }
 
-        public int ComputeSequence(int v, object sum)
+        public int ComputeSequence(int toNumber, object sum)
         {
-            throw new NotImplementedException();
+
+            if (toNumber <= 0)
+                throw new ArgumentException("Can't be 0 or negative");
+
+            int newNum = 0;
+
+            if ((int)sum == 0)
+            {
+                for (int i = 1; i <= toNumber; i++)
+                {
+                    newNum += i;
+                }
+            }
+            else if ((int)sum == 1)
+            {
+                newNum = 1;
+                for (int i = 1; i <= toNumber; i++)
+                {
+                    newNum *= i;
+                }
+            }
+
+            return newNum;
         }
     }
 }

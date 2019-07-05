@@ -12,12 +12,12 @@ X StringToBoolTests
 
 # Intermediate (försök hinna med)
 
-MultipleArgumentsTests
+X MultipleArgumentsTests
 X StringToObjectListTests
 
 # Extrauppgifter (för de som har tid över)
 
-NumberToStringTests
+X NumberToStringTests
 StringListToStringTests
 AddNumberEngineTests
 GuessingGameTests

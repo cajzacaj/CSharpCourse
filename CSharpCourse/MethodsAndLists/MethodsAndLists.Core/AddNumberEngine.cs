@@ -57,15 +57,15 @@ namespace MethodsAndLists.Core
             }
             return output;
         }
-        public class Exception : SystemException
-        {
-            public Error Error { get { return exceptionType; } }
-            public string Message1 { get; set; }
+        //public class Exception : SystemException
+        //{
+        //    public Error Error { get { return exceptionType; } }
+        //    public string Message1 { get; set; }
 
-            public
-            Exception(string message) : base(message)
-            {
-            }
-        }
+        //    public
+        //    Exception(string message) : base(message)
+        //    {
+        //    }
+        //}
     }
 }

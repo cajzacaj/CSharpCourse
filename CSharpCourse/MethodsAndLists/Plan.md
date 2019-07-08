@@ -19,5 +19,5 @@ X StringToObjectListTests
 
 X NumberToStringTests
 X StringListToStringTests
-AddNumberEngineTests
-GuessingGameTests
+X AddNumberEngineTests
+X GuessingGameTests

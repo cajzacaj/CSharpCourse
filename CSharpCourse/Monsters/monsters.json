@@ -1,0 +1,65 @@
+[
+  {
+    "Name": "Mike Wazowski",
+    "Job": "Scaring Assistant",
+    "Color": "Green",
+    "NumberOfEyes": "1",
+    "NumberOfLegs": "2"
+  },
+  {
+    "Name": "James P. Sullivan",
+    "Job": "Scarer",
+    "Color": "Turqoise, purple",
+    "NumberOfEyes": "2",
+    "NumberOfLegs": "2"
+  },
+  {
+    "Name": "Cecila Mae",
+    "Job": "Receptionist",
+    "Color": "Purple",
+    "NumberOfEyes": "11",
+    "NumberOfLegs": "5"
+  },
+  {
+    "Name": "Randall Boggs",
+    "Job": "Scarer",
+    "Color": "All the colors",
+    "NumberOfEyes": "2",
+    "NumberOfLegs": "3"
+  },
+  {
+    "Name": "Henry J. Waternoose",
+    "Job": "CEO",
+    "Color": "Beige",
+    "NumberOfEyes": "5",
+    "NumberOfLegs": "6"
+  },
+  {
+    "Name": "Roz",
+    "Job": "Manager",
+    "Color": "Green",
+    "NumberOfEyes": "2",
+    "NumberOfLegs": "0"
+  },
+  {
+    "Name": "George Sanderson",
+    "Job": "Scarer",
+    "Color": "Yellow, Orange",
+    "NumberOfEyes": "2",
+    "NumberOfLegs": "2"
+  },
+  {
+    "Name": "Josh Rivera",
+    "Job": "Scarer",
+    "Color": "Orange",
+    "NumberOfEyes": "2",
+    "NumberOfLegs": "4"
+  },
+  {
+    "Name": "Jeff Fungus",
+    "Job": "Scaring Assistant",
+    "Color": "Red",
+    "NumberOfEyes": "3",
+    "NumberOfLegs": "2"
+  }
+]

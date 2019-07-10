@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesRockstars", "Inte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesAxesAndHorses", "InterfacesAxesAndHorses\InterfacesAxesAndHorses.csproj", "{6EB1CA1F-153D-4BC4-B470-74DF18B7CD3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watcher", "Watcher\Watcher.csproj", "{CDDDD27D-935F-424E-A5EB-8AF579CD0965}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -131,6 +133,10 @@ Global
 		{6EB1CA1F-153D-4BC4-B470-74DF18B7CD3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EB1CA1F-153D-4BC4-B470-74DF18B7CD3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EB1CA1F-153D-4BC4-B470-74DF18B7CD3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDDDD27D-935F-424E-A5EB-8AF579CD0965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDDDD27D-935F-424E-A5EB-8AF579CD0965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDDDD27D-935F-424E-A5EB-8AF579CD0965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDDDD27D-935F-424E-A5EB-8AF579CD0965}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

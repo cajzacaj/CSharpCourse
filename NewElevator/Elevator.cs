@@ -52,7 +52,10 @@ namespace ElevatorProject
                 return ElevatorMoveResponse.NoPower;
 
             if (CurrentFloor - floors < LowestFloor)
+            {
+                int move = LowestFloor - CurrentFloor;
                 return ElevatorMoveResponse.CantGoDown;
+            }
             else
             {
                 CurrentFloor -= floors;

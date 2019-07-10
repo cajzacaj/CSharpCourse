@@ -23,6 +23,7 @@ namespace InterfacesRockstars
 
         private static void DisplayArrayOfRockStars(string[] rockstarsArray)
         {
+            
             ch.WriteLine("My rockstars: (Array)");
             foreach (var rockstar in rockstarsArray)
             {
@@ -40,6 +41,8 @@ namespace InterfacesRockstars
         }
         private static void DisplayIEnumerableOfRockStars(IEnumerable<string> rockstarsList)
         {
+            
+
             ch.WriteLine("My rockstars: (IEnumerable)");
             foreach (var rockstar in rockstarsList)
             {

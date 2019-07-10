@@ -41,13 +41,6 @@ namespace ElevatorProject
 
         private static void DisplayGraphic(List<Elevator> elevators)
         {
-            //Console.InputEncoding = System.Text.Encoding.Unicode;
-            //Console.OutputEncoding = System.Text.Encoding.Unicode;
-
-            // wall = █ 
-            // elevator = ⧮ 
-            // shaft = ⦙
-
             int maxShaft = 0;
             int minShaft = 0;
 
@@ -66,6 +59,7 @@ namespace ElevatorProject
 
                 for (int x = 0; x < elevators.Count * 2 + 1; x++)
                 {
+                    
                     Console.InputEncoding = System.Text.Encoding.Unicode;
                     Console.OutputEncoding = System.Text.Encoding.Unicode;
                     Console.Write("███");

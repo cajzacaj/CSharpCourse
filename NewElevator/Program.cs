@@ -86,7 +86,7 @@ namespace ElevatorProject
                             Console.ForegroundColor = ConsoleColor.DarkGray;
                         else if (elevators[x].UntilMaintainance > 0)
                             Console.ForegroundColor = ConsoleColor.DarkYellow;
-                        else if (elevators[x].UntilMaintainance == 0)
+                        else if (elevators[x].UntilMaintainance <= 0)
                             Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.Write(" █ ");
                     }
@@ -230,13 +230,13 @@ namespace ElevatorProject
             else if (response == ElevatorMoveResponse.CantGoDown)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Can't move elevator down that far");
+                Console.WriteLine("Can't move elevator down that far, elevator will move to the lowest floor possible");
                 Console.ResetColor();
             }
             else if (response == ElevatorMoveResponse.CantGoUp)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Can't move elevator up that far");
+                Console.WriteLine("Can't move elevator up that far, elevator will move to the highest floor possible");
                 Console.ResetColor();
             }
             else

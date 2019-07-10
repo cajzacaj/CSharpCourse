@@ -38,7 +38,12 @@ namespace ElevatorProject
                 return ElevatorMoveResponse.NoPower;
 
             if (CurrentFloor + floors > HighetstFloor)
+            {
+                int move = HighetstFloor - CurrentFloor;
+                CurrentFloor = HighetstFloor;
+                UntilMaintainance -= move;
                 return ElevatorMoveResponse.CantGoUp;
+            }
             else
             {
                 CurrentFloor += floors;
@@ -53,7 +58,9 @@ namespace ElevatorProject
 
             if (CurrentFloor - floors < LowestFloor)
             {
-                int move = LowestFloor - CurrentFloor;
+                int move = CurrentFloor - LowestFloor;
+                CurrentFloor = LowestFloor;
+                UntilMaintainance -= move;
                 return ElevatorMoveResponse.CantGoDown;
             }
             else

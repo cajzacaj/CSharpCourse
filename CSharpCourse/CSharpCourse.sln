@@ -39,11 +39,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestShipping", "TestShippin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shipping", "Shipping\shipping.csproj", "{3128E725-BF0E-4197-8714-6CC0AC691800}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FetchWords", "FetchWords\FetchWords\FetchWords.csproj", "{342DCB53-8966-4D85-A548-2D9CBA5592D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FetchWords", "FetchWords\FetchWords\FetchWords.csproj", "{342DCB53-8966-4D85-A548-2D9CBA5592D6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FetchWords+test", "FetchWords+test", "{F319733E-5CC5-4F94-81FC-A3EE9B33F196}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FetchWordsTest", "FetchWordsTest\FetchWordsTest.csproj", "{74254471-F6CA-4406-A005-8A484D1D3970}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FetchWordsTest", "FetchWordsTest\FetchWordsTest.csproj", "{74254471-F6CA-4406-A005-8A484D1D3970}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesRockstars", "InterfacesRockstars\InterfacesRockstars.csproj", "{D7B15192-588E-4573-B148-211D25FEF2ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesAxesAndHorses", "InterfacesAxesAndHorses\InterfacesAxesAndHorses.csproj", "{6EB1CA1F-153D-4BC4-B470-74DF18B7CD3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,6 +123,14 @@ Global
 		{74254471-F6CA-4406-A005-8A484D1D3970}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74254471-F6CA-4406-A005-8A484D1D3970}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74254471-F6CA-4406-A005-8A484D1D3970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7B15192-588E-4573-B148-211D25FEF2ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B15192-588E-4573-B148-211D25FEF2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B15192-588E-4573-B148-211D25FEF2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B15192-588E-4573-B148-211D25FEF2ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EB1CA1F-153D-4BC4-B470-74DF18B7CD3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB1CA1F-153D-4BC4-B470-74DF18B7CD3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB1CA1F-153D-4BC4-B470-74DF18B7CD3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB1CA1F-153D-4BC4-B470-74DF18B7CD3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

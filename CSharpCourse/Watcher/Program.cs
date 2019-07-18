@@ -14,6 +14,7 @@ namespace Watcher
             watcher.Created += Watcher_Created;
             watcher.Renamed += Watcher_Renamed;
             watcher.Deleted += Watcher_Deleted;
+            watcher.Changed += Watcher_Changed;
 
             Console.ReadKey();
         }
@@ -25,7 +26,7 @@ namespace Watcher
 
         private static void Watcher_Renamed(object sender, RenamedEventArgs e)
         {
-            Console.WriteLine($"{e.Name} was renamed");
+            Console.WriteLine($"{e.Name} was renamed from {e.OldName}");
         }
 
         private static void Watcher_Created(object sender, FileSystemEventArgs e)
@@ -35,7 +36,7 @@ namespace Watcher
 
         private static void Watcher_Changed(object sender, FileSystemEventArgs e)
         {
-            Console.WriteLine($"{e.Name} was changed");
+            Console.WriteLine($"{e.Name} was changed: {e.ChangeType}");
         }
     }
 }

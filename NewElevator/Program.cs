@@ -192,7 +192,7 @@ namespace ElevatorProject
             {
                 Console.Write("Go up or down? ");
                 string input = Console.ReadLine();
-
+                
                 if (input.ToLower() == "up")
                     return Direction.Up;
                 else if (input.ToLower() == "down")
@@ -215,32 +215,62 @@ namespace ElevatorProject
         private static void DisplayResponse(ElevatorMoveResponse response, Elevator elevator, Direction direction)
         {
             Console.WriteLine();
-            if (response == ElevatorMoveResponse.NoPower)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Elevator needs maintainance");
-                Console.ResetColor();
-                Console.WriteLine($"\nDo do you want to perform maintainance? (y/n) ");
-                string input = Console.ReadLine();
 
-                if (input == "y")
-                    elevator.DoMaintainanceOnElevator();
+            switch (response)
+            {
+                case ElevatorMoveResponse.Success:
+                    Console.WriteLine($"Elevator {elevator.Name} will move {direction} to floor {elevator.CurrentFloor}");
+                    break;
+                case ElevatorMoveResponse.NoPower:
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Elevator needs maintainance");
+                    Console.ResetColor();
+                    Console.WriteLine($"\nDo do you want to perform maintainance? (y/n) ");
+                    string input = Console.ReadLine();
 
+                    if (input == "y")
+                        elevator.DoMaintainanceOnElevator();
+                    break;
+                case ElevatorMoveResponse.CantGoDown:
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Can't move elevator down that far, elevator will move to the lowest floor possible");
+                    Console.ResetColor();
+                    break;
+                case ElevatorMoveResponse.CantGoUp:
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Can't move elevator up that far, elevator will move to the highest floor possible");
+                    Console.ResetColor();
+                    break;
+                default:
+                    break;
             }
-            else if (response == ElevatorMoveResponse.CantGoDown)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Can't move elevator down that far, elevator will move to the lowest floor possible");
-                Console.ResetColor();
-            }
-            else if (response == ElevatorMoveResponse.CantGoUp)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Can't move elevator up that far, elevator will move to the highest floor possible");
-                Console.ResetColor();
-            }
-            else
-                Console.WriteLine($"Elevator {elevator.Name} will move {direction} to floor {elevator.CurrentFloor}");
+
+            //if (response == ElevatorMoveResponse.NoPower)
+            //{
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //    Console.WriteLine("Elevator needs maintainance");
+            //    Console.ResetColor();
+            //    Console.WriteLine($"\nDo do you want to perform maintainance? (y/n) ");
+            //    string input = Console.ReadLine();
+
+            //    if (input == "y")
+            //        elevator.DoMaintainanceOnElevator();
+
+            //}
+            //else if (response == ElevatorMoveResponse.CantGoDown)
+            //{
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //    Console.WriteLine("Can't move elevator down that far, elevator will move to the lowest floor possible");
+            //    Console.ResetColor();
+            //}
+            //else if (response == ElevatorMoveResponse.CantGoUp)
+            //{
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //    Console.WriteLine("Can't move elevator up that far, elevator will move to the highest floor possible");
+            //    Console.ResetColor();
+            //}
+            //else
+            //    Console.WriteLine($"Elevator {elevator.Name} will move {direction} to floor {elevator.CurrentFloor}");
         }
     }
 }

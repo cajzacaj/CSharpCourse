@@ -55,7 +55,11 @@ namespace ElevatorProject
         {
             if (UntilMaintainance == 0)
                 return ElevatorMoveResponse.NoPower;
+            if (UntilMaintainance - floors == 0)
+            {
 
+                return ElevatorMoveResponse.NoPower;
+            }
             if (CurrentFloor - floors < LowestFloor)
             {
                 int move = CurrentFloor - LowestFloor;
